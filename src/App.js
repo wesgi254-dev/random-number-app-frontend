@@ -4,7 +4,7 @@ function App() {
   const [number, setNumber] = useState(null);
 
   useEffect(() => {
-    fetch("https://your-backend-production.up.railway.app/api/number")
+    fetch("https://random-number-app-backend-production.up.railway.app/")
       .then((res) => res.json())
       .then((data) => setNumber(data.number))
       .catch((err) => console.error("Error fetching number:", err));
